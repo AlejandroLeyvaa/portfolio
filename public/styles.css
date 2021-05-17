@@ -71,6 +71,12 @@ html {
     width: revert;
     margin: revert;
   }
+
+  .about-data {
+    width: 50%;
+    margin: 0 auto;
+  }
+
 }
 
 .gamesstack .container {
@@ -103,17 +109,15 @@ html {
   padding: 1.6rem;
 }
 
-.about-data {
-  width: 50%;
-  margin: 0 auto;
-}
 
 .about :is(h2) {
   font-size: 2.4rem;
+  margin-block: 1.6rem;
 }
 
 .about :is(p) {
   font-size: 1.8rem;
+  text-align: justify;
 }
 
 .about-image-container {
