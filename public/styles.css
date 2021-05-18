@@ -22,10 +22,34 @@ html {
   background-color: #00071c;
   width: 100%;
   height: 40vh;
-  display: flex;
-  justify-content: end;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr max-content;
   padding: 1.6rem;
+}
+
+.header .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  color: #fff;
+}
+
+.header .nav {
+  justify-self: end;
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.text-container .name {
+  font-size: 1.8rem;
+}
+
+.text-container .desc {
+  font-size: 1.8rem;
 }
 
 .header .nav {
@@ -33,7 +57,7 @@ html {
 }
 
 .header .nav h2 {
-  margin: 0 .8rem;
+  margin: 0 0.8rem;
 }
 
 .header .nav a {
@@ -50,6 +74,29 @@ html {
   margin: 0.8rem;
 }
 
+.stack {
+  display: flex;
+  width: max-content;
+}
+
+.stack .small-container {
+  width: 64px;
+  height: 64px;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack :is(figure) {
+  margin: 1.6rem;
+}
+
+.stack .small-container :is(img) {
+  width: 32px;
+  height: 32px;
+}
 
 @media screen and (min-width: 900px) {
   .main {
@@ -76,7 +123,6 @@ html {
     width: 50%;
     margin: 0 auto;
   }
-
 }
 
 .gamesstack .container {
@@ -92,23 +138,35 @@ html {
 
 .gamesstack :is(img) {
   height: revert;
-  margin: .8rem;
+  margin: 0.8rem;
 }
 
 .data {
-  padding: .8rem;
+  padding: 0.8rem;
+}
+
+.data :is(h2) {
+  font-size: 1.8rem;
+  margin-block-end: 0.8rem;
+}
+
+.data :is(p) {
+  font-size: 1.4rem;
+  margin-block-end: 0.8rem;
+}
+
+.data .stack-title {
   font-size: 1.6rem;
 }
 
 .gamesstack .data {
-  padding: .8rem 1.6rem;
+  padding: 0.8rem 1.6rem;
   font-size: 1.6rem;
 }
 
 .about {
   padding: 1.6rem;
 }
-
 
 .about :is(h2) {
   font-size: 2.4rem;
