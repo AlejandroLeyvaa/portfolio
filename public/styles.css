@@ -46,10 +46,12 @@ html {
 
 .text-container .name {
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .text-container .desc {
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .header .nav {
