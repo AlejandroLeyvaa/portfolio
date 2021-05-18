@@ -14,7 +14,7 @@ const portfolioTemplate =
   <div class="data">
     <div>
       <h2>Jett</h2>
-      <p>Interfaz de usuario con el que puse en practica el posicionamiento de los elementos.
+      <p>Interfaz de usuario (sin interacción por el momento) con el que puse en practica el posicionamiento de los elementos.
         el diseño le pertenece a Dmitry Kiiashko y se encuentra <a
           href="https://dribbble.com/shots/10737126-Valorant-Agent-Jett-page-concept-design?utm_source=Clipboard_Shot&amp;utm_campaign=UnEpicKid&amp;utm_content=Valorant%20-%20Agent%20Jett%20page%20concept%20design&amp;utm_medium=Social_Share&amp;utm_source=Clipboard_Shot&amp;utm_campaign=UnEpicKid&amp;utm_content=Valorant%20-%20Agent%20Jett%20page%20concept%20design&amp;utm_medium=Social_Share">aquí.</a>
       </p>
